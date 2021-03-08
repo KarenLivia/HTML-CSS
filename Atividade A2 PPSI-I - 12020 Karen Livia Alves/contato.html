@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+	<!--
+		Atividade A2 (PPSI-I - 1/2020) (Karen Livia Alves).
+		-->
+		<meta charset="UTF-8">
+		<title>Projeto Orientado</title>
+		<link href="CSS/main.css" rel="stylesheet">
+	</head>
+	<body>
+        <h1>Projeto Orientado</h1>
+
+        <nav>
+			<a href="home.html">Home |</a>
+			<a href="karen.html">Karen Livia |</a>
+			<a href="tabela-de-curiosidades.html">Tabela de curiosidades |</a>
+			<a href="sites-favoritos.html">Sites favoritos |</a>
+			<a href="descobrindo-tags.html">Descobrindo tags |</a>
+			<a href="descobrindo-propriedades-css.html">Descobrindo propriedades CSS |</a>
+			<a href="contato.html">Contato |</a>
+		</nav>
+
+    <br><br>
+
+    <section>
+        <fieldset>
+            <div class="borda">
+                <h2>Contato</h2>
+                <form action="http://hub.fatecrl.edu.br/sobrino/recebe.php" method="POST">
+                    <p>
+                        <label for="nome">Nome completo: </label><br>
+                        <input type="text" id="nome" name="nome" size="38" maxlength="30">
+                    </p>
+                    
+                    <p>
+                        <label for="email">E-mail: </label><br>
+                        <input type="email" id="email" name="email" size="38" maxlength="30">
+                    </p>
+
+                    <p>
+                        <label for="mensagem">Mensagem: </label><br>
+                        <textarea name="mensagem" id="mensagem" rows="5" cols="40" maxlength="300" ></textarea>
+                    </p>
+                    <fieldset>
+                            <legend>Deseja receber nossos infomativos?</legend>
+
+                            <input type="radio" name="informativo" value="s" id="info-s">
+                            <label for="info-s">Sim</label>
+                            
+                            <input type="radio" name="informativo" value="n" id="info-n">
+                            <label for="info-n">Não</label>
+                    </fieldset>
+                    <br>
+                    <input class="button" type="submit" value="Enviar">
+                
+                </form>
+            </div>
+        </fieldset>
+    </section>
+    <footer>
+		<p id="assinatura">Karen Livia Alves</p>
+	</footer>
+    </body>
+</html>

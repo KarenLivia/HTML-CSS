@@ -1,0 +1,168 @@
+/*Folha de estilos da Atividade A2 (PPSI-I - 1/2020) (Karen Livia Alves)*/
+
+/*IDs para exemplos da página Descobrindo propriedades CSS*/
+#exOutline{
+    outline: 1px solid black;
+} 
+
+#exTextDecoration{
+    text-decoration: line-through;
+} 
+
+#exOpacity{
+    opacity: 0.6;
+}
+
+#exText-shadow{
+    text-shadow: 2px 2px purple;
+} 
+/*---------------------------------------------------------------------*/
+
+body{
+    background-image: url("../Imagens/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: monospace;
+    font-size: 16px;
+    color: #500644;
+}
+
+h1{
+    background-color: #daced8;
+    text-align: center;
+    border-radius: 40px 10px;
+    padding: 15px;
+    color: #500644;
+}
+
+nav{
+    background-color: #bba0b6;
+    text-align: center;
+    border-radius: 40px 10px;
+    padding: 15px;
+    font-size: 18px;
+}
+
+h2{
+    color: #500644;
+    border: none;
+    margin: none;
+}
+
+h3{
+    text-align: left;
+    color: #500644;
+}
+
+section{
+    text-align: center;
+}
+
+fieldset{
+    border: 0px;
+}
+
+a{
+    color: #500644;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: #daced8;
+}
+
+a:active{
+    color: #e12dc3;
+}
+
+ul{
+    text-align: center;
+}
+
+img{
+    float: center;   
+}
+
+table{
+    width: 250px;
+    border-color: #500644;
+    border-collapse: collapse;
+    border: 1px solid #500644;
+}
+
+th{
+    background-color: #bba0b6;
+    border: 1px solid #500644;
+    padding: 8px;
+    text-align: center;
+}
+
+td{
+    text-align: center;
+    background-color: #daced8;
+    color: #500644;
+    border: 1px solid #500644;
+    padding: 8px;
+}
+
+button{
+    background-color: #daced8;
+    color: #500644;
+    border-radius: 40px 10px;
+    border-color: #500644;
+    border-style: outset;
+    padding: 10px 20px;
+}
+
+.button{
+    background-color: #daced8;
+    color: #500644;
+    border-radius: 40px 10px;
+    border-color: #500644;
+    border-style: outset;
+    padding: 10px 20px;
+}
+
+.texto{
+    text-align: left;
+    color: #500644;
+}
+
+.borda{
+    border: 2px solid #500644;
+    border-radius: 40px 10px;
+    width: fit-content;
+    padding: 8px;
+    margin: auto;
+    background-color: #daced8;
+}
+
+.curiosidades{
+    width: fit-content;
+    margin: auto;
+}
+
+.links{
+    color: #e12dc3;
+}
+
+#excecao{
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+#curiosidades{
+    text-align: center;
+}
+
+#assinatura{
+    font-family: cursive;
+    color: #820b9b;
+    font-style: italic;
+    text-align: right;
+}
+
+
+
