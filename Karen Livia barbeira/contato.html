@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/estilo2.css">
+        <link rel="stylesheet" type="text/css" href="css/contrast.css">
+		<link rel="stylesheet" type="text/css" href="css/acessibilidade.css">
+        <script
+          src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>
+		<script src="fonte.js"></script>
+		<title>Karen Livia barbeira</title>
+	</head>
+	<body>
+	
+
+	
+		<header><img src="imagens/logo.jpg" alt="Karen Livia barbeira">
+		<nav>
+		<div id="access">
+           <div class="acessibilidade">
+				<ul>
+                    <li><a href="#mae" accesskey="1">1. Ir para o conteúdo</a></li>
+                    <li><a href="#irmenu" accesskey="2">2. Ir para o menu</a></li>
+					<li><a href="#search" id="buscar" accesskey="3">3. Ir para Busca</a></li>
+                    <li><a href="#rodape" accesskey="4">4. Ir para o rodapé</a></li>
+					
+				</ul>
+				
+            </div>
+			<div class="acesso">
+				<ul>
+					<li><a href="acessibilidade.html">Acessibilidade</a></li>
+					<li><a href="#altocontraste" id="altocontraste" accesskey="5" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">5.Alto contraste</a></li>
+					<li><a href="sitemap.html" accesskey="6">6.Mapa do Site</a></li>
+					<button accesskey="+" onClick="fonte('a');">A+</button>
+					<button accesskey="-" onClick="fonte('d');">A-</button>
+					<button accesskey="/" onClick="fonte('n');">A</button>
+				</ul>
+			</div>
+		</div>
+            <form id ="search" action=" " method="post">
+			  <label for="busca">Buscar</label>
+			  <input type="search" id="busca" name="Buscar" placeholder="Pesquise Aqui...">
+			  <button type="submit">OK</button>
+			</form>
+			<ul id="irmenu">
+				<li><a href="index1.html">Home</a></li>
+				<li><a href="biografia.html">Biografia</a></li>
+				<li><a href="servicos.html">Serviços</a></li>
+				<li><a href="trabalhos.html">Trabalhos</a></li>
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
+		</nav>
+		</header>
+		
+		<div id="mae">
+		
+		<main id="main2">
+			     
+				
+				<h2>Redes sociais:</h2>
+                <div class="redes">
+                 <a href="http://www.instagram.com/karenliviabarbeira"><img src="imagens/insta.png" alt="icone do instagram" class="icone"></a>
+            
+                    <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5513992012044"><img src="imagens/whats.png" alt="icone do whatsapp" class="icone"></a>
+					<a href="https://www.facebook.com/karenliviabarbeira"> <img src="imagens/face.png" alt="icone do facebook" class="icone"></a>
+                </div>
+                <h2>Fale com a gente!</h2>
+				<form id="sign_up_form" method="post" action="" >
+                  <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Nome" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" id="email" name="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" >
+                  </div>
+                  <div class="form-group">
+                    <label for="tel">Telefone</label>
+                    <input type="tel" class="form-control" id="tel" name="tel" placeholder="(xx)99999-9999" required pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" >
+                    </div>
+                   <div class="form-group">
+                    <label for="mensagem">Deixe sua mensagem!</label>
+                    
+                    <textarea  id="mensagem" name="mensagem" cols="50" rows="15" min-length="10" required></textarea>
+                    </div>
+  <button type="submit" class="botao">ENVIAR</button>
+</form>
+
+			
+		</main>
+            
+		</div>
+		
+		<footer id="rodape">
+			<h2>Sistemas para internet<span id="face" ><a href="https://www.facebook.com/karenliviabarbeira" title="Nossa página no facebook" alt="Endereço do Facebook Karen Livia Barbeira"><img src="imagens/facebook.png" alt="Acesso a outra página, Facebook Karen Livia Barbeira"></a></span></h2>
+			<h2><a href="mailto:karenliviabarbeira@gmail.com">karenliviabarbeira@gmail.com</a></h2>
+		</footer>
+  <script type="text/javascript">
+    $(document).ready( function() {
+      $('#sign_up_form').validate({
+        rules:{ 
+          name:{ 
+            required: true,
+            minlength: 3
+          },
+          email: {
+            required: true,
+            email: true
+          },
+          tel: {
+            required: true
+          },
+         
+          
+        },
+          
+        messages:{
+          name:{ 
+            required: "O campo nome é obrigatório.",
+            minlength: "O campo nome deve conter no mínimo 3 caracteres."
+          },
+          email: {
+            required: "O campo email é obrigatório.",
+            email: "O campo email deve conter um email válido."
+          },
+            
+        tel:{
+            required:" O campo telefone é obrigatório!",
+            tel: "O campo tel deve conter um telefone válido"
+        },
+            
+        mensagem:{
+            required: " O campo mensagem é obrigatório.",
+            mensagem: "O campo deve ter no mínimo 10 caracteres."
+        }
+          
+        }
+      });
+    });
+  </script>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
+  <script type="text/javascript"> 
+        <script>
+		function fonte(e) {
+
+		var elemento = $("#mae");
+		var fonte = parseInt(elemento.css('font-size'));
+
+		var body = $("body");
+		const fonteNormal = parseInt(body.css('font-size'));
+
+
+		if (e == 'a') {
+			fonte++;
+		}
+		if (e == 'd'){
+			fonte--;
+		}
+		if (e == 'n'){
+			fonte = fonteNormal;
+		}
+
+		elemento.css("fontSize", fonte);
+		
+	}
+			</script>
+
+
+			<script>
+			(function() {
+			var Contrast = {
+				storage: 'contrastState',
+				cssClass: 'contrast',
+				currentState: null,
+				check: checkContrast,
+				getState: getContrastState,
+				setState: setContrastState,
+				toogle: toogleContrast,
+				updateView: updateViewContrast
+			};
+
+			window.toggleContrast = function () { Contrast.toogle(); };
+
+			Contrast.check();
+
+			function checkContrast() {
+				this.updateView();
+			}
+
+			function getContrastState() {
+				return localStorage.getItem(this.storage) === 'true';
+			}
+
+			function setContrastState(state) {
+				localStorage.setItem(this.storage, '' + state);
+				this.currentState = state;
+				this.updateView();
+			}
+
+			function updateViewContrast() {
+				var body = document.body;
+
+				if (this.currentState === null)
+					this.currentState = this.getState();
+
+				if (this.currentState)
+					body.classList.add(this.cssClass);
+				else
+					body.classList.remove(this.cssClass);
+			}
+
+			function toogleContrast() {
+				this.setState(!this.currentState);
+			}
+		})();
+</script>
+	</body>
+	
+</html>

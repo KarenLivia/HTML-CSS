@@ -1,0 +1,559 @@
+body{
+	width:100%;
+	font-family: Lucida Grande, Tahoma, Verdana, Arial, sans-serif;
+	color:#000;		
+	font-size:1em;
+	margin:0 auto;
+    box-sizing: border-box;
+    padding:0;
+
+	}
+
+	#mae{
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+	/*-----header------------------------------------------------*/
+header{
+	background-color:#300;
+	height:155px;
+	width:100%;
+	}
+
+.shadow{
+box-shadow: 15px; 
+
+}
+
+.redes{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-around;
+    margin-bottom:2em;
+    
+    
+    
+}
+
+
+
+
+.redes img {
+    width:3em;
+    height:3em;
+    margin-right: 1em;
+}
+	
+
+  #sign_up_form {
+      width: 50;
+      margin: 0 auto;
+      margin-top:1em;
+      margin-bottom: 1em;
+      border: 5px double #900;
+      border-radius:2%;
+    }
+    .form-group, .form-check {
+      padding: 8px 0;
+      font-size: 22px;
+    }
+    .form-group label {
+      display: block;
+    }
+    .form-group input {
+      font-size: 16px;
+    }
+    .error, label.error {
+      color: red;
+      font-size: 16px;
+    }
+form .botao{
+    font-family: 'Arial';
+    color:white;
+    background-color:#900;
+    cursor:pointer;
+    padding:1em;
+    border-radius:10px;
+    
+    
+}
+form .botao:hover{
+    background-color:#300;
+}
+
+
+header img{
+	width:150px;
+	height:130px;
+	float:left;
+	padding-left:1%;
+	margin-top: 7px;
+	
+}	
+
+#access{
+    display:inline;
+    align-content: space-around;
+    font-size:0.7em;
+    flex-wrap:nowrap;
+    
+    
+}
+
+	/*-----nav----------------------------------------------------*/
+nav{
+	width:75%;	
+	background-color:#ffe	;
+	float:left;
+	margin:5% 2%;
+	border-radius:20px;
+	
+}
+
+nav ul li{
+	list-style-type:none;
+	text-align:center;
+	padding:0% 3.5%;
+	display:inline;
+	margin:1.5%;
+    cursor: pointer;
+
+}
+
+nav ul li a{
+	text-decoration:none;
+	color:#500;
+	font-weight:600;
+	padding:0.5%
+}
+
+nav ul li a:hover{
+	color:#ffe;
+	background-color:#300;
+	border-radius:10px;
+	font-size: 1.0em;
+	padding:0.5%;
+	
+}
+
+#sitemaps li {
+    text-decoration: none;
+    list-style-type: none;
+}
+#sitemaps li a{
+    text-decoration: none;
+    color:#900;
+}
+
+	/*------main--------------------------------------------------*/
+
+	/*-----main Hcard---------------------------------------------*/
+
+		
+#center h1{
+    color:#900;
+    text-align: center;
+    margin:0 auto;
+}
+	
+.tel{color:#900;}
+
+#center h2 {
+    text-align: center;
+}
+
+.adr{background-color:#fff;width:45%;margin:0 auto;padding-bottom:1%;}
+
+h3.fname{margin:0; color:#900; line-height:5em;}
+
+a.com,.adr{text-align:center; line-height:3em;}
+
+a.com{display:block;}
+
+.wrapper #form-contato{
+                    display:block;
+                }
+
+/*-----main escola-----------------------------------------*/
+#main3{
+  width: 100%;
+  background-color:#fff;
+  margin: 0;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  margin-bottom: 2%;			
+  
+				/*width:80%;
+				background-color:#ffc;
+				margin:0% 10%;
+				text-align:center;
+				padding-top:5%;
+				padding-bottom:2%;
+				margin-bottom:2%;*/
+}
+
+#main3 h1{
+color:#000;
+display:flex;
+text-align: center;
+flex-direction: column;
+justify-content: center;
+
+}
+
+#main4 h1 {
+    color:#000;
+    text-align:center;
+}
+
+#main3 p{
+padding:1% 5%;}
+
+#main2{
+    display:flex;
+    text-align: center;
+    width:100%;
+    flex-direction:column;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    
+}
+
+
+
+/*-----main servi�os-----------------------------------------*/
+
+
+
+	/*-----main trabalhos-----------------------------------------*/
+#main4{width:80%;background-color:#fff;margin:0 auto;margin-left:10%;}
+
+	/*-----main index--------------------------------------------*/
+#slider {
+   width: 70%;
+   height: 500px;
+   overflow: hidden;
+   position: relative;
+   margin: 0 auto;
+   margin-left:25%;
+    
+    }
+#slider img {
+    width:500px;
+    height:500px;
+}
+
+
+#slider figure {
+   width: 80%; 
+   height:500px;               
+   margin: 0;
+   position: absolute;
+   top: 0;
+   left: -1500px;
+   z-index: 1;
+   transition: all linear 0.5s;
+   -o-transition: all linear 0.5s;
+   -moz-transition: all linear 0.5s;
+   -webkit-transition: all linear 0.5s;
+   
+}
+#slider figure:target {
+   left: 0;
+}
+#slider figure:first-child {
+   left: 0;
+}
+#slider figure figcaption {
+   position: absolute;
+   top: 0;
+   left: 13px;
+   right: 700px;
+   z-index: 2;
+   color: #fff;
+   font-weight:900;
+   padding: 10px 20px;
+   width: 500px;
+   background: #000;
+   transition: all linear 2s;
+   -o-transition: all linear 2s;
+   -moz-transition: all linear 2s;
+   -webkit-transition: all linear 2s;
+}
+#slider figure:target figcaption {
+   right: 0;
+   
+}
+#sliderPg {
+   position: absolute;
+   right: 10px;
+   bottom: 10px;
+  
+   z-index: 10;
+}
+#sliderPg a {
+   text-decoration: none;
+   background:#000;
+   padding: 4px 8px;
+   color: #fff;
+   border-radius: 20px;
+   transition: all linear 0.7s;
+   -o-transition: all linear 0.7s;
+   -moz-transition: all linear 0.7s;
+   -webkit-transition: all linear 0.7s;
+}
+#sliderPg a:hover {
+   background: #900;
+   color: #fff;
+   width: auto;
+}
+
+/*-----section index-------------------------------------*/
+section#welcome{width:80%; margin:0 auto;text-align:center;padding:1% 0%;color:#900; left:90px;}
+h1 strong#maior{font-size:1.3em;}
+
+	/*-----section formulário-------------------------------------*/
+#contato{width:70%;
+	margin: auto;}
+
+
+#comentarios{background-color:#fff;}
+	
+#fale-conosco{font-size: 1.5em;text-align:center;color:#900;line-height:3.5em;}
+
+.fotoemail{float: right;width: 10%;padding: 40px;}
+
+.opiniao {font-size: 18px;color: #900;background-color: #fff;text-decoration: underline;}
+
+
+fieldset {
+	width: 100%;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	border-color: #900;
+
+}
+
+fieldset *{
+margin: 10px auto;
+width: 80%;
+}
+fieldset label{
+	display: grid;
+	width: 100%;
+}
+#mensagem{
+	width: 80%;
+	height: 180px;
+}
+.enviar{
+	height: 40px;
+}
+#formulario{
+	margin: 10px auto;
+}
+label{
+	text-align: center;
+}
+
+label span{display:block;}
+
+
+.btn {
+	padding: 0%;
+	width: 80%;
+	border: none;
+	font-family: 'Lato';
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	text-align: center;
+	display: inline-block;
+	height: 50px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+
+/* Icon separator */
+
+
+.btn-sep:before {
+	background: rgba(0,0,0,0.15);
+}
+
+.btn-4 {
+	background: #34495e;
+	color: #fff;
+}
+
+.btn-4:hover {
+	background: #2c3e50;
+}
+
+.btn-4:active {
+	background: #2c3e50;
+	top: 2px;
+}
+
+.btn-4:before {
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: 0;
+	line-height: 3;
+	font-size: 140%;
+	width: 60px;
+}
+
+/* Icons */
+
+
+/*-----section escola-------------------------------------*/
+section#escola{width:90%; margin:0 auto;margin-left:5%;}
+section h2#meio{text-align:center;color:#900;}
+section.artistas{
+margin:2% auto%;
+}
+.artistas{background-color:#fff;width:26%;float:left;margin-left:1%;margin-top:1%;margin-bottom:2%;border-radius:10px;padding:2% 3%;font-size:0.8em;text-align:center;}
+.artistas{background-color:#fff;width:26%;float:left;margin-left:1%;margin-top:1%;margin-bottom:2%;border-radius:10px;padding:2% 3%;font-size:0.8em;text-align:center;}
+.artistas h3{color:#900;}
+
+/*-----section servi�os-------------------------------------*/	
+
+
+
+	
+
+	/*-----section trabalhos-------------------------------------*/
+section.noticias{
+margin-top:5%;
+margin-left:2%;
+}
+
+.noticias{background-color:#fff;width:15%;float:left;margin:1%;padding:2%;font-size:0.8em;text-align:justify;}
+
+.noticias img{width:95%}
+
+.noticias img#dino,.noticias img#sd{width:100%}
+
+.noticias a:hover{
+	color:#ffc;
+	background-color:#900;
+	border-radius:30px;
+	font-size: 1.1em;
+	padding:0.8%;
+}
+
+	/*------article noticias------------------------------------*/
+article{	
+	width:86%;
+	background-color:#fff;
+	color:#900;
+	margin: 2% 2%;
+	padding:5% 5%;
+	text-align:justify;
+	clear:both;
+	}
+	
+article a:hover{
+	color:#ffc;
+	background-color:#900;
+	border-radius:30px;
+	padding:0.2%;
+	}
+	
+article img#bc{
+	float:right;
+	width: 15%;
+	max-width:100%;
+	padding-left:3%;
+	padding-bottom:1%;
+	
+	}
+	
+	
+	/*aside*/
+aside{
+	width:22%;	
+	background-color:#fff;
+	color:#900;
+	padding:2% 3%;
+	margin:8% 3%;
+	float:left;
+	border-radius:30%;
+	text-align:center;
+}		
+
+aside p{
+	font-size:0.9em;
+}
+	
+	/*footer*/
+footer{
+	width:100%;
+	height:130px;
+	background-color:#300;
+	padding-top:0.5%;
+	clear:both;
+}
+
+footer h2{		
+	color:#ffc;
+	margin:0 auto;
+	padding-left:10%;
+	font-size: 1em;
+	
+}
+
+footer h2 a{
+	color:#ffc;	line-height:2%;
+                text-decoration: none;}
+footer span#face{padding-left:20%;}
+footer span#twitter{padding-left:5%;}
+
+
+
+#main404{width:100%;height:430px;margin:0 auto;}
+
+#erro{width:40%;height:150px;background-color:#ffc;margin:0 auto;padding:5%;margin-top:5%;border-radius:10px;}
+
+
+	/*-----media queries------------------------------------*/
+@media screen and (min-width:601px) and (max-width:800px){
+	body {width:100%; font-size:1em;}
+	nav, main, section, aside, arcticle {width:100%;}
+	nav ul li {display:inline; margin-right:2em;}
+}
+
+@media screen and (min-width:501px) and (max-width:600px){
+	body {width:100%;font-size:1.1em;}
+	nav, main, section, aside {width:90%;}
+	nav ul li {display:block; margin-right:1em;}
+}	
+
+@media screen and (min-width:320px) and (max-width:500px){
+	body {width:100%;font-size:1.1em;}
+	nav, main, aside {width:90%;}
+	nav ul li {display:block; margin-right:2em;}
+	section{display:none;}
+}	
+
+@media screen and (min-width:220px) and (max-width:319px){
+	body {width:100%;font-size:1.2em; }
+	main {width:100%;}
+	nav ul li {display:block; margin-right:1em;}
+	aside, section {display:none;}
+}

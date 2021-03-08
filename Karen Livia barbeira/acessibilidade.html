@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/estilo2.css">
+        <link rel="stylesheet" type="text/css" href="css/contrast.css">
+		<link rel="stylesheet" type="text/css" href="css/acessibilidade.css">
+		
+        <script
+          src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>
+		<script src="fonte.js"></script>
+		<title>Karen Livia barbeira</title>
+	</head>
+	<body>
+	
+	
+		
+		<header><img src="imagens/logo.jpg" alt="Karen Livia barbeira">
+		<nav>
+		<div id="access">
+            <div class="acessibilidade">
+				<ul>
+                    
+                    <li><a href="#mae" accesskey="1">1. Ir para o conteúdo</a></li>
+                    <li><a href="#irmenu" accesskey="2">2. Ir para o menu</a></li>
+					<li><a href="#search" id="buscar" accesskey="3">3. Ir para Busca</a></li>
+                    <li><a href="#rodape" accesskey="4">4. Ir para o rodapé</a></li>
+                </ul>
+            </div>
+            
+				
+				
+           
+			<div class="acesso">
+				<ul>
+					<li><a href="acessibilidade.html">Acessibilidade</a></li>
+					<li><a href="#altocontraste" id="altocontraste" accesskey="5" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">5.Alto contraste</a></li>
+					<li><a href="sitemap.html" accesskey="6">6.Mapa do Site</a></li>
+					<button accesskey="+" onClick="fonte('a');">A+</button>
+					<button accesskey="-" onClick="fonte('d');">A-</button>
+					<button accesskey="/" onClick="fonte('n');">A</button>
+				</ul>
+			</div>
+		</div>
+			<form id ="search" action=" " method="post">
+			  <label for="busca">Buscar</label>
+			  <input type="search" id="busca" name="Buscar" placeholder="Pesquise Aqui...">
+			  <button type="submit">OK</button>
+			</form>
+			
+			<ul id="irmenu">
+				<li><a href="index1.html">Home</a></li>
+				<li><a href="biografia.html">Biografia</a></li>
+				<li><a href="servicos.html">Serviços</a></li>
+				<li><a href="trabalhos.html">Trabalhos</a></li>
+				<li><a href="contato.html">Contato</a></li>				
+			</ul>
+		</nav>
+		</header>
+		
+		<main id="main4">	
+			
+			<div id="mae">
+			<h1>Acessibilidade</h1>
+			<h2>Teclas de atalho - Google Chrome e Opera</h2>
+			
+			<p>O usuário ao pressionar as teclas (alt+1), será direcionado ao conteúdo principal da página.</p>
+			<p>O usuário ao pressionar as teclas (alt+2), será direcionado ao conteúdo menu da página.</p>
+			<p>O usuário ao pressionar as teclas (alt+3), será direcionado à barra de busca da página.</p>
+			<p>O usuário ao pressionar as teclas (alt+4), será direcionado ao rodapé da página.</p>
+			
+			<h3>Sobre as Teclas de acessibilidade</h3>
+			
+			<p>O usuário ao pressionar as teclas (alt+5) terá o conteúdo mostrado em alto contraste(para quem possuir baixa visão).</p>
+			<h3>Tamanho das fontes</h3>
+			<p>O usuário terá liberdade para escolher qual tamanho de fonte for mais agradável à sua visão, bastando pressionar as teclas (alt+ +) para aumentar o tamanho, (alt + -) para diminuir ou (alt + /) para deixar a fonte no tamanho normal. </p>
+                
+                
+            <h2>Teclas de atalho - Mozilla Firefox</h2>
+			
+			<p>O usuário ao pressionar as teclas (alt+shift+1), será direcionado ao conteúdo principal da página.</p>
+			<p>O usuário ao pressionar as teclas (alt+shift+2), será direcionado ao conteúdo menu da página.</p>
+			<p>O usuário ao pressionar as teclas (alt+shift+3), será direcionado à barra de busca da página.</p>
+			<p>O usuário ao pressionar as teclas (alt+shift+4), será direcionado ao rodapé da página.</p>
+			
+			<h3>Sobre as Teclas de acessibilidade</h3>
+			
+			<p>O usuário ao pressionar as teclas (alt+shift+5) terá o conteúdo mostrado em alto contraste(para quem possuir baixa visão).</p>
+			<h3>Tamanho das fontes</h3>
+			<p>O usuário terá liberdade para escolher qual tamanho de fonte for mais agradável à sua visão, bastando pressionar as teclas (alt+shift+ +) para aumentar o tamanho, (alt+shift -) para diminuir ou (alt+shift /) para deixar a fonte no tamanho normal. </p>
+				
+			</div>
+			
+		</main>
+		<footer id="rodape">
+			<h2>Sistemas para internet<span id="face" ><a href="https://www.facebook.com/karenliviabarbeira" target="_blank" title="Nossa página no facebook"><img src="imagens/facebook.png" alt="Facebook Karen Livia Barbeira"></a></span></h2>
+			<h2><a href="mailto:karenliviabarbeira@gmail.com">karenliviabarbeira@gmail.com</a></h2>
+		</footer>
+        <script>
+		function fonte(e) {
+
+		var elemento = $("#mae");
+		var fonte = parseInt(elemento.css('font-size'));
+
+		var body = $("body");
+		const fonteNormal = parseInt(body.css('font-size'));
+
+
+		if (e == 'a') {
+			fonte++;
+		}
+		if (e == 'd'){
+			fonte--;
+		}
+		if (e == 'n'){
+			fonte = fonteNormal;
+		}
+
+		elemento.css("fontSize", fonte);
+		
+	}
+			</script>
+
+
+        <script>
+			(function() {
+			var Contrast = {
+				storage: 'contrastState',
+				cssClass: 'contrast',
+				currentState: null,
+				check: checkContrast,
+				getState: getContrastState,
+				setState: setContrastState,
+				toogle: toogleContrast,
+				updateView: updateViewContrast
+			};
+
+			window.toggleContrast = function () { Contrast.toogle(); };
+
+			Contrast.check();
+
+			function checkContrast() {
+				this.updateView();
+			}
+
+			function getContrastState() {
+				return localStorage.getItem(this.storage) === 'true';
+			}
+
+			function setContrastState(state) {
+				localStorage.setItem(this.storage, '' + state);
+				this.currentState = state;
+				this.updateView();
+			}
+
+			function updateViewContrast() {
+				var body = document.body;
+
+				if (this.currentState === null)
+					this.currentState = this.getState();
+
+				if (this.currentState)
+					body.classList.add(this.cssClass);
+				else
+					body.classList.remove(this.cssClass);
+			}
+
+			function toogleContrast() {
+				this.setState(!this.currentState);
+			}
+		})();
+</script>
+	</body>
+</html>
